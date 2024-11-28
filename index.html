@@ -5,18 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChadOps - Official Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/simple_rounded_logo.png" type="image/png">
 </head>
 <body>
-<header>
+<header class="sticky-header">
+    <img src="assets/simple_rounded_logo.png" alt="ChadOps Logo" class="logo">
+    <nav>
+        <ul>
+            <li><a href="#hero">Welcome</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#community">Community</a></li>
+        </ul>
+    </nav>
 </header>
 <section id="hero" class="hero-banner">
     <div class="content">
-        <h1>Rugged</h1>
-        <p>Once again (lol), please come back later</p>
+        <h1>Welcome to ChadOps</h1>
+        <p>Let’s rise together and make those JPEGs less dead again.</p>
+        <p class="contract-address">
+            Contract Address: <code>COMING SOON</code>
+            <button onclick="copyToClipboard('COMING SOON')">Copy</button>
+        </p>
+        <button onclick="scrollToSection('story')">Our Story</button>
+    </div>
+</section>
+<section id="story" class="story-section">
+    <div class="story-background">
+        <div class="story-content">
+            <h2 class="story-title">Our Legacy, Our Story</h2>
+            <p class="story-intro">
+                Born at the dawn of blockchain, we are the architects of a new digital age. Fearless pioneers who redefined reality,
+                we were there when decentralized code turned whispers into thunder.
+            </p>
+            <p>
+                Witnesses to fortunes rising, tokens thriving, and memes evolving into culture-changing forces, we have seen the
+                greed of the few and the dreams of the many. We are the OGs—the foundation of a world built on innovation and ingenuity.
+            </p>
+            <p>
+                But our mission was never about the spotlight. It’s about creation in its purest form—silent, powerful, enduring.
+                In the shadows, we craft a destiny beyond fleeting trends, forging timeless memes that whisper of revolution.
+            </p>
+            <p>
+                While the world chases fleeting fame and blinding lights, we master the art of the unseen. The meme is our weapon,
+                a signal, a force—and we wield it as rightful creators. From the ether to eternity, our legacy shapes the fabric
+                of reality itself.
+            </p>
+            <p class="story-epilogue">
+                The future belongs to the quiet creators. In silence, we build. In shadows, we thrive.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="community" class="community-section">
+    <h2 class="community-title">🌟 Join the ChadOps Community 🌟</h2>
+    <div class="community-links">
+        <a href="https://t.me/chadops_sol" target="_blank" class="community-link telegram">
+            <img src="assets/icons8.png" alt="Telegram"> Telegram
+        </a>
+        <a href="https://x.com/ChadOpsCoinKek" target="_blank" class="community-link twitter">
+            <img src="assets/twitter-x.png" alt="Twitter"> Twitter
+        </a>
     </div>
 </section>
 <footer>
-    <p>&copy; 2024 ChadOps All Rights Reserved.</p>
+    <p>Contract Address: <code>COMING SOON</code></p>
+    <p>&copy; 2024 ChadOps. All Rights Reserved.</p>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
