@@ -15,6 +15,7 @@
             <li><a href="#hero">Welcome</a></li>
             <li><a href="#story">Our Story</a></li>
             <li><a href="#community">Community</a></li>
+            <li><a href="#meme-gallery">Meme Gallery</a></li>
         </ul>
     </nav>
 </header>
@@ -65,6 +66,24 @@
         <a href="https://x.com/ChadOpsCoinKek" target="_blank" class="community-link twitter">
             <img src="assets/twitter-x.png" alt="Twitter"> Twitter
         </a>
+    </div>
+</section>
+<section id="meme-gallery" class="meme-gallery">
+    <h2 class="meme-gallery-title">🎉 Meme Gallery 🎉</h2>
+    <div class="meme-grid"></div>
+
+    <!-- Overlay for viewing GIFs -->
+    <div class="overlay" id="overlay">
+        <div class="overlay-content">
+            <button class="close-overlay" onclick="closeOverlay()">✖</button>
+            <img id="overlay-image" src="" alt="Meme">
+            <div class="overlay-buttons">
+                <button id="copy-url" onclick="copyGifUrl()">Copy GIF URL</button>
+                <button onclick="randomGif()">Random</button>
+            </div>
+            <button class="arrow left" onclick="navigateGif('prev')">←</button>
+            <button class="arrow right" onclick="navigateGif('next')">→</button>
+        </div>
     </div>
 </section>
 <footer>
